@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>TFG: Pagina web con webGL sobre brazos roboticos</title>
+	<style>
+		body { background-color: #99FFFF; margin: 0px; overflow:hidden;}
+		canvas { background-color: green;}
+	</style>	
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<font size="+6"><b>TFG</b></font><br>
+	<a href="../index.html">Volver a atrás</a>
+	
+	<form name="framecombo">
+	<select name="framecombo2" size=1>
+		<option value='blender/json/camara'>camara</option>
+		<option value='blender/json/avenger'>Avenger</option>
+	  </select>
+	  <input type="button" id="go" value="Go!" onclick="setURL(framecombo2.value)"></p>
+	</form>
+
+
+	<hr>
+	<div id='container'></div>
+	
+	
+	
+	<!--Bibliotecas-->
+	<script src="libs/ThreeJSV71/build/three.min.js"></script>
+	<script src="libs/OrbitControls.js"></script>
+	<script src="libs/Coordinates.js"></script>
+	<script src="libs/dat.gui.min.js"></script>
+	<script src="libs/stats.min.js"></script>	
+	<script src="libs/ColladaLoader.js"></script>	
+	<script src="libs/jquery-2.1.4.min.js"></script>	
+	
+	<!--Fuentes-->
+	<script src="fonts/gentilis_bold.typeface.js"></script>
+	<script src="fonts/gentilis_regular.typeface.js"></script>
+	<script src="fonts/optimer_bold.typeface.js"></script>
+	<script src="fonts/helvetiker_bold.typeface.js"></script>
+	<script src="fonts/helvetiker_regular.typeface.js"></script>
+	<script src="fonts/droid_sans_regular.typeface.js"></script>
+	<script src="fonts/droid_sans_bold.typeface.js"></script>
+	<script src="fonts/droid_serif_regular.typeface.js"></script>
+	<script src="fonts/droid_serif_regular.typeface.js"></script>
+	<!-- Mi aplicación-->
+	
+	<script>
+	$.getScript("js/json.js", function(){
+		$( "#go" ).click(function() {			
+	})});
+	
+	
+	</script>	
+	
+
+	<br>
+	
+
+</body>
+</html>
