@@ -23,9 +23,6 @@
 	<script src="libs/dat.gui.min.js"></script>
 	<script src="libs/stats.min.js"></script>	
 	<script src="libs/ColladaLoader.js"></script>	
-	
-	
-	
 	<script>
 		$(document).ready(function() {
 			$.getScript("js/json.js", function(){

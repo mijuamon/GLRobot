@@ -94,8 +94,7 @@ function setURL(url)
 		{
 			var txt=result.split('\n');
 			var pos=txt[2].split(':')[1].split(',');
-			var rot=txt[3].split(':')[1].split(',');
-			alert(result);
+			var rot=txt[3].split(':')[1].split(',');			
 			var sca=txt[4].split(':')[1].split(',');
 				
 			modelo.position.set(parseInt(pos[0]),parseInt(pos[1]),parseInt(pos[2]));
@@ -104,20 +103,6 @@ function setURL(url)
 
 		//------------------------------------
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
-		
-		
 		scene.add(modelo);		
 	});	
 }
